@@ -1,0 +1,121 @@
+body{
+	margin-top: 20%;
+    background-color: #FAFAFA;
+}
+
+p {
+	font-size: 200%
+}
+
+.text{
+    font-size: 120%;
+    line-height: 150%;
+}
+
+.text-centered{
+    font-size: 120%;
+    line-height: 150%;
+    text-align: center;
+}
+
+.bull{
+    font-size: 120%;
+    line-height: 150%;
+    text-align: center;
+}
+
+.writing{
+    font-size: 120%;
+    line-height: 150%;
+    text-align: justify;
+}
+
+.screenplay-body{
+    font-size: 100%;
+    line-height: 150%;
+    text-align: justify;
+    font-family: "Courier New", monospace;
+}
+
+.screenplay-dialogue-character{
+    font-size: 100%;
+    text-align: center;
+    font-family: "Courier New", monospace;
+    margin-left: 30%;
+    margin-right: 30%;
+}
+
+.screenplay-dialogue{
+    font-size: 100%;
+    line-height: 150%;
+    text-align: justify;
+    font-family: "Courier New", monospace;
+    margin-left: 30%;
+    margin-right: 30%;
+}
+
+u{
+	text-underline-offset: 5%;
+	color: black;
+}
+
+a{color: black;}
+a:link {text-decoration: none;}
+a:visited {text-decoration: none;}
+a:hover {text-decoration: underline;}
+a:active {text-decoration: underline;}
+
+* {
+  box-sizing: border-box;
+}
+
+.row {
+	display: flex;
+	margin-left: 20%;
+	margin-right: 20%;
+}
+
+
+.column {
+	flex: 33%;
+}
+
+.dropbtn {
+	border: none;
+	background-color: f6f6f6;
+}
+
+.dropdown {
+	position: relative;
+	display: inline-block;
+}
+
+.dropdown-content {
+	display: none;
+	position: absolute;
+	min-width: 160px;
+	z-index: 0;
+}
+
+.dropdown-content a {
+	text-decoration: none;
+	color: black;
+	display: block;
+	font-size: 100%;
+}
+
+.dropdown-content a:hover {text-decoration: underline;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {text-decoration: underline;}
+
+.exp{visibility: hidden;}
+
+sup{
+    font-size: 70%;
+}
+
+summary {
+	cursor: pointer;
+}

@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Ling Nodes</title>
+  <style> body { margin: 0; } </style>
+  <script src="//unpkg.com/force-graph"></script>
+  <script src="//unpkg.com/d3-force"></script>
+</head>
+
+<body>
+
+    <!-- Kaloyan Kanev made this using github.com/vasturiano/force-graph -->
+    
+    <div id="graph"></div>
+
+    <script>
+        fetch('dataset.json').then(res => res.json()).then(data => {
+            const Graph = ForceGraph()
+            (document.getElementById('graph'))
+            .graphData(data)
+            .nodeId('id')
+            .nodeVal('val')
+            .nodeLabel('id')
+            .nodeAutoColorBy('group')
+            .linkSource('source')
+            .linkTarget('target')
+            .linkDirectionalArrowLength(6)
+            .backgroundColor('#101020')
+            .linkColor(() => 'rgba(255,255,255,0.2)')
+            .cooldownTicks(100)
+
+            Graph.d3Force('center', null);
+
+            Graph.onEngineStop(() => Graph.zoomToFit(1000));
+            });
+
+  </script>
+</body>
+</html>
