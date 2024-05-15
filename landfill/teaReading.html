@@ -1,6 +1,10 @@
 <head>
-	<title>tea reading &bull; kaloyan kanev</title>
-  <style> body { margin: 0; } </style>
+  <title>tea reading &bull; kaloyan kanev</title>
+  <style>
+    body {
+      margin: 0;
+    }
+  </style>
 
   <script src="//unpkg.com/force-graph"></script>
   <!--<script src="../../dist/force-graph.js"></script>-->
@@ -19,11 +23,11 @@
       vx: (Math.random() * 5) - 2,
       vy: (Math.random() * 5) - 2
     }));
-      
+
 
     const graph = ForceGraph()
       (document.getElementById('graph'))
-    
+
     graph.cooldownTime(Infinity)
       .zoomToFit()
       .d3AlphaDecay(1)
@@ -31,12 +35,12 @@
       // Deactivate existing forces
       .d3Force('center', null)
       .d3Force('charge', null)
-      
+
 
       // Add collision and bounding box forces
       .d3Force('collide', d3.forceCollide(graph.nodeRelSize()))
       .d3Force('box', () => {
-        const SQUARE_HALF_SIDE = graph.nodeRelSize() * N/20;
+        const SQUARE_HALF_SIDE = graph.nodeRelSize() * N / 20;
 
         nodes.forEach(node => {
           const x = node.x || 0, y = node.y || 0;

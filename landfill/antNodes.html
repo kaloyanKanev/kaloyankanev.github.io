@@ -1,8 +1,12 @@
-
 <!doctype html>
 <html lang="en">
+
 <head>
-  <style> body { margin: 0; } </style>
+  <style>
+    body {
+      margin: 0;
+    }
+  </style>
 
   <script src="//unpkg.com/force-graph"></script>
   <!--<script src="../../dist/force-graph.js"></script>-->
@@ -20,15 +24,15 @@
         .filter(id => id)
         .map(id => ({
           source: id,
-          target: Math.round(Math.random() * (id-1))
+          target: Math.round(Math.random() * (id - 1))
         }))
     };
 
     const Graph = ForceGraph()
       (document.getElementById('graph'))
-        .linkDirectionalParticles(2)
-        .graphData(gData);
+      .linkDirectionalParticles(2)
+      .graphData(gData);
   </script>
 </body>
-	
+
 </html>
