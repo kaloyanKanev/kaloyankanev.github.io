@@ -100,6 +100,18 @@ a:active {
     padding: 1rem;
 }
 
+.Mrow {
+    margin-left: 0%;
+    margin-right: 0%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.Mcolumn {
+    flex: 20%;
+    padding: 1rem;
+}
+
 .dropbtn {
     border: none;
     background-color: f6f6f6;
