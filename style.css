@@ -157,5 +157,23 @@ sup {
 }
 
 summary {
+<<<<<<< Updated upstream
     cursor: pointer;
+=======
+	cursor: pointer;
+}
+
+table, th, td {
+	border: 1px white;
+	border-collapse: collapse;
+	padding: 10px;
+}
+
+th{
+	text-align:center;
+}
+
+td{
+	text-align: center;
+>>>>>>> Stashed changes
 }
