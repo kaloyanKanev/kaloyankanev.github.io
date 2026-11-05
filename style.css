@@ -18,6 +18,13 @@ p {
     text-align: center;
 }
 
+.text-cv {
+    font-size: 120%;
+    line-height: 150%;
+    margin-top: 0%;
+    margin-bottom: 0%;
+}
+
 .bull {
     font-size: 120%;
     line-height: 150%;
